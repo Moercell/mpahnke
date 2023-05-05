@@ -2,4 +2,8 @@
     width: 100%;
     height: max-content;
     padding: calc(5% * 3);
+
+    @media (max-width: 768px) {
+        padding: 5%;
+    }
 }
