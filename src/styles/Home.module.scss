@@ -1,0 +1,23 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.sideWrapper {
+    height: max-content;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    transition: 10ms;
+
+    @media (max-width: 768px) {
+        position: relative;
+        grid-template-columns: 1fr;
+        display: block;
+        transition: 0;
+    }
+}

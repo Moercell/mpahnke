@@ -1,0 +1,42 @@
+.project {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 4rem;
+    background-color: white;
+    border: solid 2px #111;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+
+    .text {
+        position: relative;
+        z-index: 2;
+        padding: 10%;
+        h3 {
+            margin: 0;
+            margin-bottom: 1rem;
+        }
+        p {
+            margin: 0;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .image {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        place-items: center;
+        img {
+            width: 100%;
+            transform: scale(1.5);
+            transform-origin: center center;
+
+            @media (max-width: 768px) {
+                transform: scale(1.2);
+            }
+        }
+    }
+}

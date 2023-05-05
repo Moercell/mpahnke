@@ -1,0 +1,10 @@
+.mainContent {
+    padding: 0 8%;
+    padding-top: 3.125rem;
+    background-color: whitesmoke;
+    grid-column: 2 / 3;
+
+    @media (max-width: 768px) {
+        grid-column: 1 / 2;
+    }
+}

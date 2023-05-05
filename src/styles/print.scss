@@ -1,0 +1,118 @@
+@page {
+    size: A4 !important;
+    margin: 0;
+    margin-bottom: 20mm;
+    margin-top: 20mm;
+}
+
+@page:first {
+    margin-top: 0;
+}
+
+@media print {
+    .Home_grid__o5jCu {
+        display: block;
+        width: 210mm;
+        height: auto;
+    }
+
+    .Side_side__OLKWo {
+        background-color: whitesmoke !important;
+        padding: 60pt !important;
+        width: 315mm !important;
+    }
+
+    .Profile_profile__DDD_3 {
+        h1 {
+            text-align: left !important;
+            font-size: 30pt !important;
+            margin-bottom: 5pt;
+        }
+        h3 {
+            text-align: left !important;
+            font-size: 20pt !important;
+            margin-top: 5pt;
+        }
+    }
+
+    .Profile_image__AZ_gh {
+        display: none;
+    }
+    .Contact_links__k1r0a {
+        display: none !important;
+    }
+
+    .SideSection_sideSection__QkCD0 {
+        h2 {
+            display: none !important;
+        }
+        hr {
+            display: none !important;
+        }
+        .Skills_skills__kU648 {
+            display: none !important;
+        }
+    }
+    .MainContent_mainContent__8NOAZ {
+        background-color: white !important;
+        padding: 0 60pt !important;
+
+        h2 {
+            font-size: 25pt !important;
+        }
+        h3 {
+            font-size: 20pt !important;
+            letter-spacing: 4pt !important;
+            margin-bottom: 6pt !important;
+        }
+    }
+
+    .Contact_contact___3IXY {
+        position: absolute !important;
+        top: 80pt !important;
+        left: 235mm !important;
+        z-index: 1000 !important;
+        text-align: right;
+
+        a {
+            color: black !important;
+        }
+    }
+
+    .adress {
+        display: block;
+        p {
+            margin: 0;
+        }
+    }
+
+    .itemDescription {
+        display: block;
+        padding-right: 50pt;
+        text-align: justify;
+
+        p {
+            margin: 0;
+            margin-bottom: 2rem;
+        }
+    }
+
+    h2 {
+        page-break-before: always !important;
+        page-break-after: avoid !important;
+    }
+
+    h3 {
+        page-break-after: avoid !important;
+    }
+
+    main > div {
+        position: absolute;
+    }
+
+    .projects {
+        page-break-before: always !important;
+        page-break-after: always !important;
+        page-break-inside: avoid !important;
+    }
+}

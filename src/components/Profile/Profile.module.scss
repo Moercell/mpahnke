@@ -1,0 +1,25 @@
+.profile {
+    text-align: justify;
+
+    .image {
+        padding: 0 10%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    }
+
+    .description {
+        margin-top: 1.5rem;
+    }
+    h1,
+    h3 {
+        text-align: center;
+    }
+
+    h3 {
+        margin-bottom: 2em;
+    }
+}

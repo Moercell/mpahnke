@@ -1,0 +1,13 @@
+.sectionItem {
+    p {
+        margin-bottom: 40px;
+    }
+}
+
+@media print {
+    .sectionItem.hasDesc {
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
