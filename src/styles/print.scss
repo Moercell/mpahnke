@@ -1,7 +1,7 @@
 @page {
     size: A4 !important;
     margin: 0;
-    margin-bottom: 20mm;
+    margin-bottom: 18mm;
     margin-top: 20mm;
 }
 
@@ -56,6 +56,8 @@
     .MainContent_mainContent__8NOAZ {
         background-color: white !important;
         padding: 0 60pt !important;
+        display: grid;
+        grid-template-columns: 1fr;
 
         h2 {
             font-size: 25pt !important;
@@ -97,6 +99,10 @@
         }
     }
 
+    .printURL {
+        display: inline-block;
+    }
+
     h2 {
         page-break-before: always !important;
         page-break-after: avoid !important;
@@ -114,5 +120,13 @@
         page-break-before: always !important;
         page-break-after: always !important;
         page-break-inside: avoid !important;
+    }
+
+    .Project_project__eFZqm {
+        page-break-inside: avoid !important;
+        border: none !important;
+        width: 297mm !important;
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
     }
 }
