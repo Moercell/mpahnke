@@ -11,6 +11,7 @@ import Skills from '@/components/Skills/Skills';
 import Contact from '@/components/Contact/Contact';
 import {useEffect, useRef, useState} from 'react';
 import Project from '@/components/Project/Project';
+import List from '@/components/List/List';
 
 export default function Home() {
     const intl = useIntl();
@@ -57,6 +58,30 @@ export default function Home() {
         {name: 'CINEMA 4D', level: 40},
     ];
 
+    const printSkills = [
+        'HTML / CSS / SCSS',
+        'JavaScript / TypeScript',
+        'React / Next.js',
+        'Vue.js',
+        'PHP',
+        'Python',
+        'Node.js',
+        'MySQL / MongoDB',
+        'Bash / ZSH',
+        'Git / Github / Gitlab',
+        'Docker',
+        'Storybook / chromatic',
+        'IOT / Arduino / Raspberry Pi',
+        'Wordpress / Storyblok / Contentful / Prismic',
+        'Figma',
+        'Jira',
+        'ILLUSTRATOR',
+        'PHOTOSHOP',
+        'CINEMA 4D',
+        'QGIS / ArcGIS',
+        'MS Office / Google Workspace',
+    ];
+
     return (
         <>
             <Head>
@@ -93,6 +118,7 @@ export default function Home() {
                 <meta name="msapplication-TileColor" content="#ffffff" />
                 <meta name="msapplication-TileImage" content="/fav/ms-icon-144x144.png" />
                 <meta name="theme-color" content="#ffffff" />
+                <meta name="robots" content="index, follow" />
             </Head>
             <main>
                 <div className={styles.grid} ref={containerRef}>
@@ -146,7 +172,7 @@ export default function Home() {
                                     {link: <a href="https://v1b.es/">v1b.es</a>},
                                 )}
                                 from={'2021-01'}
-                                description={intl.formatMessage({id: 'section.exp.06.desc'})}
+                                descriptionID={'section.exp.06.desc'}
                             />
                             <SectionItem
                                 title={intl.formatMessage(
@@ -155,6 +181,7 @@ export default function Home() {
                                 )}
                                 from={'2020-04'}
                                 to={'2021-04'}
+                                descriptionList={intl.formatMessage({id: 'section.exp.05.desc'})}
                             />
                             <SectionItem
                                 title={intl.formatMessage({id: 'section.exp.04'})}
@@ -189,6 +216,13 @@ export default function Home() {
                         </Section>
 
                         <Section
+                            className="printSkills"
+                            title={intl.formatMessage({id: 'section.skills'})}
+                        >
+                            <List items={printSkills} />
+                        </Section>
+
+                        <Section
                             title={intl.formatMessage({id: 'section.projects'})}
                             className="projects"
                         >
@@ -197,49 +231,70 @@ export default function Home() {
                                 link="https://grotesk.group/"
                                 linkLabel={intl.formatMessage({id: 'link.label'})}
                                 image="/projects/grotesk.png"
-                                description={intl.formatMessage({id: 'project.grotesk.desc'})}
+                                description={intl.formatMessage(
+                                    {id: 'project.grotesk.desc'},
+                                    {br: <br />},
+                                )}
                             />
                             <Project
                                 title="AERA"
                                 link="https://aera.berlin/"
                                 linkLabel={intl.formatMessage({id: 'link.label'})}
                                 image="/projects/aera.png"
-                                description={intl.formatMessage({id: 'project.aera.desc'})}
+                                description={intl.formatMessage(
+                                    {id: 'project.aera.desc'},
+                                    {br: <br />},
+                                )}
                             />
                             <Project
                                 title="Alfred Töpfer Stiftung"
                                 link="https://www.toepfer-stiftung.de/"
                                 linkLabel={intl.formatMessage({id: 'link.label'})}
                                 image="/projects/toepfer.png"
-                                description={intl.formatMessage({id: 'project.toepfer.desc'})}
+                                description={intl.formatMessage(
+                                    {id: 'project.toepfer.desc'},
+                                    {br: <br />},
+                                )}
                             />
                             <Project
                                 title="Worled"
                                 link="https://worled.space/"
                                 linkLabel={intl.formatMessage({id: 'link.label'})}
                                 image="/projects/worled.png"
-                                description={intl.formatMessage({id: 'project.worled.desc'})}
+                                description={intl.formatMessage(
+                                    {id: 'project.worled.desc'},
+                                    {br: <br />},
+                                )}
                             />
                             <Project
                                 title="OTK"
                                 link="https://www.oberflaechentechnik-kempen.de/"
                                 linkLabel={intl.formatMessage({id: 'link.label'})}
                                 image="/projects/otk.png"
-                                description={intl.formatMessage({id: 'project.otk.desc'})}
+                                description={intl.formatMessage(
+                                    {id: 'project.otk.desc'},
+                                    {br: <br />},
+                                )}
                             />
                             <Project
                                 title="Steine werfen"
                                 link="https://steine-werfen.vercel.app/"
                                 linkLabel={intl.formatMessage({id: 'link.label'})}
                                 image="/projects/steine.png"
-                                description={intl.formatMessage({id: 'project.steine.desc'})}
+                                description={intl.formatMessage(
+                                    {id: 'project.steine.desc'},
+                                    {br: <br />},
+                                )}
                             />
                             <Project
                                 title="Tierarztpraxis Blessing"
                                 link="https://www.ta-blessing.de/"
                                 linkLabel={intl.formatMessage({id: 'link.label'})}
                                 image="/projects/blessing.png"
-                                description={intl.formatMessage({id: 'project.blessing.desc'})}
+                                description={intl.formatMessage(
+                                    {id: 'project.blessing.desc'},
+                                    {br: <br />},
+                                )}
                             />
                         </Section>
                     </MainContent>

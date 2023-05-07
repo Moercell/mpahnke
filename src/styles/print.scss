@@ -103,8 +103,21 @@
         }
     }
 
+    ul.itemDescription {
+        list-style: circle;
+        margin-left: 20px;
+
+        li {
+            color: black;
+        }
+    }
+
     .printURL {
         display: inline-block;
+    }
+
+    .printSkills {
+        display: block;
     }
 
     h2 {

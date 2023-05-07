@@ -9,7 +9,7 @@ interface ProjectProps {
     link?: string;
     linkLabel?: string;
     image?: string;
-    description?: string;
+    description?: string | JSX.Element | (string | JSX.Element)[];
 }
 
 const Project: FC<ProjectProps> = ({className, title, link, linkLabel, image, description}) => {

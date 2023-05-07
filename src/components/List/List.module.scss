@@ -1,0 +1,14 @@
+.list {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: circle;
+        margin-left: 1rem;
+        margin-right: 40mm;
+    }
+
+    li {
+        margin-right: 3rem;
+        text-transform: uppercase;
+    }
+}
