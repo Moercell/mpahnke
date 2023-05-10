@@ -175,7 +175,7 @@ export default function Home() {
                                     {link: <a href="https://v1b.es/">v1b.es</a>},
                                 )}
                                 from={'2021-01'}
-                                descriptionID={'section.exp.06.desc'}
+                                descriptionList={intl.formatMessage({id: 'section.exp.06.desc'})}
                             />
                             <SectionItem
                                 title={intl.formatMessage(
@@ -189,20 +189,24 @@ export default function Home() {
                             <SectionItem
                                 title={intl.formatMessage({id: 'section.exp.04'})}
                                 from={'2015-08'}
+                                descriptionList={intl.formatMessage({id: 'section.exp.04.desc'})}
                             />
                             <SectionItem
                                 title={intl.formatMessage({id: 'section.exp.03'})}
                                 from={'2014-08'}
+                                descriptionList={intl.formatMessage({id: 'section.exp.03.desc'})}
                             />
                             <SectionItem
                                 title={intl.formatMessage({id: 'section.exp.02'})}
                                 from={'2014-05'}
                                 to={'2014-07'}
+                                descriptionList={intl.formatMessage({id: 'section.exp.02.desc'})}
                             />
                             <SectionItem
                                 title={intl.formatMessage({id: 'section.exp.01'})}
                                 from={'2013-11'}
                                 to={'2014-05'}
+                                descriptionList={intl.formatMessage({id: 'section.exp.01.desc'})}
                             />
                         </Section>
                         <Section title={intl.formatMessage({id: 'section.edu'})}>
@@ -210,11 +214,13 @@ export default function Home() {
                                 title={intl.formatMessage({id: 'section.edu.02'})}
                                 from={'2016-08'}
                                 to={'2020-06'}
+                                descriptionList={intl.formatMessage({id: 'section.edu.02.desc'})}
                             />
                             <SectionItem
                                 title={intl.formatMessage({id: 'section.edu.01'})}
                                 from={'2012-08'}
                                 to={'2015-06'}
+                                descriptionList={intl.formatMessage({id: 'section.edu.01.desc'})}
                             />
                         </Section>
 

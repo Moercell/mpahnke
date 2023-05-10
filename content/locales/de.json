@@ -1,7 +1,7 @@
 {
     "profile.name": "Marcel Pahnke",
     "profile.job": "Webentwicklerin",
-    "profile.description": "im Alter von 14 Jahren begann ich meine ersten Schritte im Bereich des Webdesigns zu machen und habe seitdem kontinuierlich meine Fähigkeiten verbessert. Während meiner Ausbildung zum Geovisualisierer habe ich, meine Leidenschaft zum Beruf gemacht und konnte erste Aufträge als freiberuflicher Webdesigner gewinnen. Das hat dazu geführt, dass meine Ausbilder mich als Dozent für Webkurse einsetzten, woraufhin ich meinen Ausbilderschein (AEVO) bei der IHK absolvierte.{br}{br} In meinem anschließenden Studium im Bereich der Webentwicklung konnte ich mit Gleichgesinnten meine Leidenschaft teilen und an diversen spannenden Projekten arbeiten. Die Zusammenarbeit mit motivierten und inspirierenden Kommilitone führte schließlich zur Gründung unseres eigenen Kollektivs v1b.es",
+    "profile.description": "Im Alter von 14 Jahren begann ich meine ersten Schritte im Bereich des Webdesigns zu machen und habe seitdem kontinuierlich meine Fähigkeiten verbessert. Während meiner Ausbildung zum Geovisualisierer habe ich, meine Leidenschaft zum Beruf gemacht und konnte erste Aufträge als freiberuflicher Webdesigner gewinnen. Das hat dazu geführt, dass meine Ausbilder mich als Dozent für Webkurse einsetzten, woraufhin ich meinen Ausbilderschein (AEVO) bei der IHK absolvierte.{br}{br} In meinem anschließenden Studium im Bereich der Webentwicklung konnte ich mit Gleichgesinnten meine Leidenschaft teilen und an diversen spannenden Projekten arbeiten. Die Zusammenarbeit mit motivierten und inspirierenden Kommilitone führte schließlich zur Gründung unseres eigenen Kollektivs v1b.es",
     "section.skills": "Fähigkeiten",
     "section.contact": "Kontakt",
     "date.since": "seit",
@@ -14,6 +14,7 @@
     "section.exp.03": "FREELANCE WEB DEVELOPER / GRAPHIC DESIGNER",
     "section.exp.04": "LECTURER @ ERNST LITFAß SCHULE (OSZ)",
     "section.exp.05": "WEB DEVELOPER @ {link}",
+    "section.exp.05.desc": "",
     "section.exp.06": "FULL STACK DEVELOPER / FOUNDER OF {link}",
     "section.exp.06.desc": "",
     "section.projects": "Projekte",
