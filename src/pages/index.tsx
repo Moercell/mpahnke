@@ -197,12 +197,6 @@ export default function Home() {
                                 descriptionList={intl.formatMessage({id: 'section.exp.03.desc'})}
                             />
                             <SectionItem
-                                title={intl.formatMessage({id: 'section.exp.02'})}
-                                from={'2014-05'}
-                                to={'2014-07'}
-                                descriptionList={intl.formatMessage({id: 'section.exp.02.desc'})}
-                            />
-                            <SectionItem
                                 title={intl.formatMessage({id: 'section.exp.01'})}
                                 from={'2013-11'}
                                 to={'2014-05'}
