@@ -1,7 +1,7 @@
 {
     "profile.name": "Marcel Pahnke",
     "profile.job": "Webentwicklerin",
-    "profile.description": "Ich habe in der 9. Klasse als Hobby mit Webdesign begonnen und bis zur 11. Klasse weitergemacht, als ich mich entschloss, es richtig zu lernen. Klasse, wo ich mich entschied, es richtig zu lernen. 2014 hatte ich meinen ersten richtigen Job als freiberufliche Webdesignerin und begann auch als Dozentin an meiner alten Schule für einige grundlegende Webkurse. Jetzt studiere ich Webentwicklung in Berlin und habe einige tolle Leute mit den gleichen Interessen kennengelernt, so dass wir schnell angefangen haben, zusammenzuarbeiten ... das Kollektiv heißt jetzt v1b.es",
+    "profile.description": "im Alter von 14 Jahren begann ich meine ersten Schritte im Bereich des Webdesigns zu machen und habe seitdem kontinuierlich meine Fähigkeiten verbessert. Während meiner Ausbildung zum Geovisualisierer habe ich, meine Leidenschaft zum Beruf gemacht und konnte erste Aufträge als freiberuflicher Webdesigner gewinnen. Das hat dazu geführt, dass meine Ausbilder mich als Dozent für Webkurse einsetzten, woraufhin ich meinen Ausbilderschein (AEVO) bei der IHK absolvierte.{br}{br} In meinem anschließenden Studium im Bereich der Webentwicklung konnte ich mit Gleichgesinnten meine Leidenschaft teilen und an diversen spannenden Projekten arbeiten. Die Zusammenarbeit mit motivierten und inspirierenden Kommilitone führte schließlich zur Gründung unseres eigenen Kollektivs v1b.es",
     "section.skills": "Fähigkeiten",
     "section.contact": "Kontakt",
     "date.since": "seit",
@@ -15,14 +15,14 @@
     "section.exp.04": "LECTURER @ ERNST LITFAß SCHULE (OSZ)",
     "section.exp.05": "WEB DEVELOPER @ {link}",
     "section.exp.06": "FULL STACK DEVELOPER / FOUNDER OF {link}",
-    "section.exp.06.desc": "A tight-knit collective of creatives {br} offers professional consulting and builds sites combining innovative design and a holistic experience for the user. Working as a collaborative collective enables us to put together the best team for every project and work with highest agility.",
+    "section.exp.06.desc": "",
     "section.projects": "Projekte",
     "link.label": "mehr",
-    "project.grotesk.desc": "Grotesk is a minimalistic and responsive portfolio theme for Jekyll designed for focus and simplicity. It features four different color schemes, a large cover image, and a clean layout.",
-    "project.aera.desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, alias repudiandae! Nulla voluptatibus odit fugit eos blanditiis beatae cupiditate rerum, iste autem consequuntur laborum reprehenderit, nihil reiciendis esse nostrum porro.",
-    "project.toepfer.desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, alias repudiandae! Nulla voluptatibus odit fugit eos blanditiis beatae cupiditate rerum, iste autem consequuntur laborum reprehenderit, nihil reiciendis esse nostrum porro.",
-    "project.worled.desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, alias repudiandae! Nulla voluptatibus odit fugit eos blanditiis beatae cupiditate rerum, iste autem consequuntur laborum reprehenderit, nihil reiciendis esse nostrum porro.",
-    "project.otk.desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, alias repudiandae! Nulla voluptatibus odit fugit eos blanditiis beatae cupiditate rerum, iste autem consequuntur laborum reprehenderit, nihil reiciendis esse nostrum porro.",
-    "project.steine.desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, alias repudiandae! Nulla voluptatibus odit fugit eos blanditiis beatae cupiditate rerum, iste autem consequuntur laborum reprehenderit, nihil reiciendis esse nostrum porro.",
-    "project.blessing.desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, alias repudiandae! Nulla voluptatibus odit fugit eos blanditiis beatae cupiditate rerum, iste autem consequuntur laborum reprehenderit, nihil reiciendis esse nostrum porro."
+    "project.grotesk.desc": "Grotesk ist ein Digitales Kollektiv, das sich auf 3D visualisierung und Animation spezialisiert hat.{br}{br} Modullar gebaut mit Next.js und Storyblok als headless CMS, gehosted auf Vercel.",
+    "project.aera.desc": "Bauprojekt in Berlin für Moderne und Grüne Büroflächen. {br}{br} Gebaut mit Next.js und Prismic als headless CMS, gehosted auf Vercel.",
+    "project.toepfer.desc": "fördert Kunst & Kultur, Bildung & Gesellschaft, Wissenschaft und Zukunftsgerechte Landnutzung mit unterschiedlichen Ressourcen.{br}{br} Modullar gebaut mit Next.js und Storyblok als headless CMS, gehosted auf Vercel, Multilingual und wöchentlichen updates.",
+    "project.worled.desc": "Musik-Platform mit wöchentlichen Veröffentlichungen. Benutzer können jeden Song nur einmal hören um sich voll und ganz nur auf die Musik einzulassen.{br}{br} Gebaut mit Vue.js und P5 für die Visualisierung der Songs. Das Backend ist komplett individuell mit Node.js und MongoDB gebaut.",
+    "project.otk.desc": "Die Oberflächentechnik Kempen GmbH (OTK) veredelt die Oberflächen Ihrer Produkte nachhaltig, dekorativ und umweltschonend.{br}{br} Gebaut mit Next.js und Prismic als headless CMS, gehosted auf Uberspace.",
+    "project.steine.desc": "v1bes Promotion Website für den 1.Mai um virtuelle Steine zu werfen. {br}{br} Gebaut mit Preact, MongoDB und Node.js. {br}{br} Wir haben über 4.000 digitale würfe gezählt.",
+    "project.blessing.desc": "Kleine Tierarztpraxis mit familiärer Atmosphäre in Berlin. {br}{br} Selbstgebautes Wordpress Theme und ACF für die Inhalte."
 }

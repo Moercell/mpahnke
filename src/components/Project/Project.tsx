@@ -19,10 +19,13 @@ const Project: FC<ProjectProps> = ({className, title, link, linkLabel, image, de
                 <div className={styles.text}>
                     <h3>{title}</h3>
                     <p>{description}</p>
-                    <a href={link}>{linkLabel}</a> <span className="printURL"> @ {link} </span>
+                    <a href={link} target="blank">
+                        {linkLabel}
+                    </a>{' '}
+                    <span className="printURL"> @ {link} </span>
                 </div>
                 <div className={styles.image}>
-                    <a href={link}>
+                    <a href={link} target="blank">
                         <img src={image} alt={title} />
                     </a>
                 </div>

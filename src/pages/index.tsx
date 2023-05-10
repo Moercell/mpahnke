@@ -131,7 +131,10 @@ export default function Home() {
                             <Profile
                                 name={'Marcel Pahnke'}
                                 job={'WEB DEVELOPER'}
-                                description={intl.formatMessage({id: 'profile.description'})}
+                                description={intl.formatMessage(
+                                    {id: 'profile.description'},
+                                    {br: <br />},
+                                )}
                                 image={'/avatar.jpg'}
                             />
                             <SideSection title={intl.formatMessage({id: 'section.skills'})}>

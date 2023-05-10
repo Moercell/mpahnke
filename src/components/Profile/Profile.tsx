@@ -4,7 +4,7 @@ import styles from './Profile.module.scss';
 interface ProfileProps {
     name: string;
     job: string;
-    description: string;
+    description: string | JSX.Element | (string | JSX.Element)[];
     image: string;
 }
 
