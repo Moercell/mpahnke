@@ -57,30 +57,8 @@ export default function Home() {
         {name: 'PHOTOSHOP', level: 70},
         {name: 'CINEMA 4D', level: 40},
     ];
-
-    const printSkills = [
-        'HTML / CSS / SCSS',
-        'JavaScript / TypeScript',
-        'React / Next.js',
-        'Vue.js',
-        'PHP',
-        'Python',
-        'Node.js',
-        'MySQL / MongoDB',
-        'Bash / ZSH',
-        'Git / Github / Gitlab',
-        'Docker',
-        'Storybook / chromatic',
-        'IOT / Arduino / Raspberry Pi',
-        'Wordpress / Storyblok / Contentful / Prismic',
-        'Figma',
-        'Jira',
-        'ILLUSTRATOR',
-        'PHOTOSHOP',
-        'CINEMA 4D',
-        'QGIS / ArcGIS',
-        'MS Office / Google Workspace',
-    ];
+    const stringToArray = (str: string): Array<string> => str.split(',');
+    const printSkills = stringToArray(intl.formatMessage({id: 'skills.print'}));
 
     return (
         <>
@@ -129,8 +107,8 @@ export default function Home() {
                     >
                         <Side>
                             <Profile
-                                name={'Marcel Pahnke'}
-                                job={'WEB DEVELOPER'}
+                                name={intl.formatMessage({id: 'profile.name'})}
+                                job={intl.formatMessage({id: 'profile.job'})}
                                 description={intl.formatMessage(
                                     {id: 'profile.description'},
                                     {br: <br />},

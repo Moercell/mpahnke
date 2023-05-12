@@ -13,11 +13,11 @@ export default function App({Component, pageProps}: AppProps) {
     const messages = useMemo(() => {
         switch (shortLocale) {
             case 'de':
-                return German;
+                return pageProps.dataDE || German;
             case 'en':
-                return English;
+                return pageProps.dataEN || English;
             default:
-                return English;
+                return German;
         }
     }, [shortLocale]);
 
@@ -27,3 +27,27 @@ export default function App({Component, pageProps}: AppProps) {
         </IntlProvider>
     );
 }
+
+App.getInitialProps = async () => {
+    const formatArrayToObject = (arr: Array<Array<string>>): {[key: string]: string} =>
+        arr.reduce((acc, [key, value]) => ({...acc, [key]: value}), {});
+
+    const GOOGLE_SHEETS_URL = 'https://sheets.googleapis.com/v4/spreadsheets/';
+
+    const resDE = await fetch(
+        `${GOOGLE_SHEETS_URL}${process.env.GOOGLE_SHEET_ID}/values/de!A:B?key=${process.env.GOOGLE_API_KEY}`,
+    );
+    const dataDE = await resDE.json();
+
+    const resEN = await fetch(
+        `${GOOGLE_SHEETS_URL}${process.env.GOOGLE_SHEET_ID}/values/en!A:B?key=${process.env.GOOGLE_API_KEY}`,
+    );
+    const dataEN = await resEN.json();
+
+    return {
+        pageProps: {
+            dataDE: formatArrayToObject(dataDE.values),
+            dataEN: formatArrayToObject(dataEN.values),
+        },
+    };
+};
