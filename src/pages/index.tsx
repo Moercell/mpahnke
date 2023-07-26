@@ -9,14 +9,16 @@ import SectionItem from '@/components/SectionItem/SectionItem';
 import SideSection from '@/components/SideSection/SideSection';
 import Skills from '@/components/Skills/Skills';
 import Contact from '@/components/Contact/Contact';
-import {useEffect, useRef, useState} from 'react';
+import {useEffect, useRef, useState, useCallback} from 'react';
 import Project from '@/components/Project/Project';
 import List from '@/components/List/List';
+import Options from '@/components/Options/Options';
 
 export default function Home() {
     const intl = useIntl();
     const containerRef = useRef<HTMLDivElement>(null);
     const sideRef = useRef<HTMLDivElement>(null);
+    const [editMode, setEditMode] = useState(false);
 
     useEffect(() => {
         const side = sideRef.current;
@@ -47,6 +49,34 @@ export default function Home() {
             document.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    let conamicode = [
+        'ArrowUp',
+        'ArrowUp',
+        'ArrowDown',
+        'ArrowDown',
+        'ArrowLeft',
+        'ArrowRight',
+        'ArrowLeft',
+        'ArrowRight',
+        'b',
+        'a',
+    ];
+
+    useEffect(() => {
+        document.addEventListener('keydown', (event) => {
+            if (event.key === conamicode[0]) {
+                conamicode.shift();
+            }
+
+            if (conamicode.length === 0) {
+                setEditMode(true);
+            }
+        });
+        return () => {
+            document.removeEventListener('keydown', () => {});
+        };
+    }, [editMode]);
 
     const skills = [
         {name: 'HTML / CSS', level: 90},
@@ -154,6 +184,7 @@ export default function Home() {
                                 )}
                                 from={'2021-01'}
                                 descriptionList={intl.formatMessage({id: 'section.exp.06.desc'})}
+                                editable={editMode}
                             />
                             <SectionItem
                                 title={intl.formatMessage(
@@ -163,21 +194,25 @@ export default function Home() {
                                 from={'2020-04'}
                                 to={'2021-04'}
                                 descriptionList={intl.formatMessage({id: 'section.exp.05.desc'})}
+                                editable={editMode}
                             />
                             <SectionItem
                                 title={intl.formatMessage({id: 'section.exp.04'})}
                                 from={'2015-08'}
+                                editable={editMode}
                                 descriptionList={intl.formatMessage({id: 'section.exp.04.desc'})}
                             />
                             <SectionItem
                                 title={intl.formatMessage({id: 'section.exp.03'})}
                                 from={'2014-08'}
                                 descriptionList={intl.formatMessage({id: 'section.exp.03.desc'})}
+                                editable={editMode}
                             />
                             <SectionItem
                                 title={intl.formatMessage({id: 'section.exp.01'})}
                                 from={'2013-11'}
                                 to={'2014-05'}
+                                editable={editMode}
                                 descriptionList={intl.formatMessage({id: 'section.exp.01.desc'})}
                             />
                         </Section>
@@ -186,12 +221,14 @@ export default function Home() {
                                 title={intl.formatMessage({id: 'section.edu.02'})}
                                 from={'2016-08'}
                                 to={'2020-06'}
+                                editable={editMode}
                                 descriptionList={intl.formatMessage({id: 'section.edu.02.desc'})}
                             />
                             <SectionItem
                                 title={intl.formatMessage({id: 'section.edu.01'})}
                                 from={'2012-08'}
                                 to={'2015-06'}
+                                editable={editMode}
                                 descriptionList={intl.formatMessage({id: 'section.edu.01.desc'})}
                             />
                         </Section>
@@ -281,6 +318,7 @@ export default function Home() {
                     </MainContent>
                 </div>
             </main>
+            {/*editMode ? <Options /> : null*/}
         </>
     );
 }

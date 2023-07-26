@@ -1,6 +1,35 @@
 .sectionItem {
+    position: relative;
     p {
         margin-bottom: 40px;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.remove {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+    background-color: #f44336;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    display: grid;
+    place-items: center;
+
+    &:hover {
+        background-color: #d32f2f;
+    }
+
+    img {
+        width: 20px;
+        height: 20px;
     }
 }
 
@@ -9,5 +38,9 @@
         p {
             margin-bottom: 0;
         }
+    }
+
+    .remove {
+        display: none;
     }
 }

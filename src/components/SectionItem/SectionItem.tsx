@@ -10,16 +10,27 @@ interface SectionItemProps {
     to?: string;
     descriptionID?: string;
     descriptionList?: string;
+    editable?: boolean;
 }
 
-const SectionItem: FC<SectionItemProps> = ({title, from, to, descriptionID, descriptionList}) => {
+const SectionItem: FC<SectionItemProps> = ({
+    title,
+    from,
+    to,
+    descriptionID,
+    descriptionList,
+    editable,
+}) => {
     const intl = useIntl();
+
+    const [isVisible, setIsVisible] = React.useState(true);
 
     return (
         <MotionWrapper>
             <div
                 className={cn(styles.sectionItem, {
                     [styles.hasDesc]: descriptionID || descriptionList,
+                    [styles.hide]: isVisible === false,
                 })}
             >
                 <h3>{title}</h3>
@@ -58,6 +69,11 @@ const SectionItem: FC<SectionItemProps> = ({title, from, to, descriptionID, desc
                             <li key={index}>{item}</li>
                         ))}
                     </ul>
+                ) : null}
+                {editable ? (
+                    <div className={styles.remove} onClick={() => setIsVisible(false)}>
+                        <img src="/remove.svg" alt="remove" />
+                    </div>
                 ) : null}
             </div>
         </MotionWrapper>
